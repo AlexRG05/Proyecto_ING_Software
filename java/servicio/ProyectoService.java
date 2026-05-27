@@ -25,7 +25,7 @@ public class ProyectoService {
             return false;
         }
 
-        Proyecto proyecto = new Proyecto();
+        Proyecto proyecto = new Proyecto(id, nombre, descripcion);
 
         return dao.guardar(proyecto);
     }
